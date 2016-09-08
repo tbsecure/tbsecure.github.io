@@ -4,9 +4,7 @@ layout: default
 
 <div class="home">
 
-  <!-- {{ page.title | smartify }} -->
-
-  {{ site.pages }}
+{{ site.pages | sort: 'title', 'last' }}
 
   <!-- <h1 class="page-heading">Posts</h1>
 
